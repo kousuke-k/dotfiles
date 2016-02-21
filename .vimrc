@@ -5,6 +5,11 @@ set tabstop=2
 set softtabstop=2
 set autoindent
 set smartindent
+set bg=dark
+
+let g:hybrid_use_iTerm_colors = 1
+colorscheme hybrid
+syntax on
 
 autocmd QuickfixCmdPost * copen
 
@@ -31,11 +36,14 @@ NeoBundle 'kana/vim-submode'
 NeoBundle 'open-browser.vim'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-rails'
+NeoBundle 'elixir-lang/vim-elixir'
+NeoBundle 'itchyny/lightline.vim'
 "NeoBundle 'Shougo/neosnippet.vim'
 "NeoBundle 'Shougo/neosnippet-snippets'
 "NeoBundle 'tpope/vim-fugitive'
 "NeoBundle 'ctrlpvim/ctrlp.vim'
 "NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'Shougo/unite.vim'
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
@@ -64,3 +72,4 @@ call submode#map('winsize', 'n', '', '>', '<C-w>>')
 call submode#map('winsize', 'n', '', '<', '<C-w><')
 call submode#map('winsize', 'n', '', '+', '<C-w>+')
 call submode#map('winsize', 'n', '', '-', '<C-w>-')
+
